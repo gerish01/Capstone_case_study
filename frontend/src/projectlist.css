@@ -1,0 +1,89 @@
+/* projectlist.css */
+.project-list-container {
+    padding: 20px;
+}
+
+.project-list-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-list-container .add-project-link {
+    text-decoration: none;
+}
+
+.project-list-container .add-project-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.project-list-container .add-project-button:hover {
+    background-color: #0056b3;
+}
+
+.project-list-container .project-list {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.project-list-container .project-list-item {
+    margin-bottom: 10px;
+}
+
+.project-list-container .project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-list-container .project-info {
+    flex-grow: 1;
+}
+
+.project-list-container .action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.drawer-content {
+    padding: 20px;
+    width: 250px;
+}
+
+/* projectlist.css */
+.project-list-container {
+    padding: 20px;
+    max-height: 1000px;
+    /* Adjust the height as needed */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-project-link {
+    text-decoration: none;
+}
+
+.add-project-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.search-field {
+    margin-bottom: 20px;
+}

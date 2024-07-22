@@ -1,0 +1,164 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+    /* Lighter gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Slightly different font */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 2.8rem;
+    /* Slightly larger font size for the title */
+    color: #2c3e50;
+    /* Darker, but still soft color */
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    /* Larger font size for better readability */
+    color: #7f8c8d;
+    /* Softer gray color */
+    margin: 10px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* Increased gap for better spacing */
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 35px;
+    /* Slightly larger padding */
+    border-radius: 8px;
+    /* Rounded corners */
+    color: #fff;
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    font-weight: 600;
+    /* Slightly bolder text */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    /* Added box-shadow transition */
+}
+
+.login-btn {
+    background-color: #3498db;
+    /* Softer blue */
+}
+
+.login-btn:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Added shadow on hover */
+}
+
+.tasks-btn {
+    background-color: #2ecc71;
+    /* Softer green */
+}
+
+.tasks-btn:hover {
+    background-color: #27ae60;
+    /* Darker green on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Added shadow on hover */
+}
+
+.info-section {
+    text-align: center;
+    margin-top: 50px;
+    /* Increased margin for better spacing */
+}
+
+.section-title {
+    font-size: 2.2rem;
+    /* Slightly larger font size */
+    color: #2c3e50;
+    /* Darker text color */
+    margin-bottom: 30px;
+    /* Increased margin for spacing */
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* Increased gap for better spacing */
+}
+
+.info-item {
+    background: #ffffff;
+    padding: 25px;
+    /* Increased padding for a more spacious feel */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Softer shadow */
+    transition: box-shadow 0.3s;
+    /* Added transition for shadow */
+}
+
+.info-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    /* Darker shadow on hover */
+}
+
+.info-title {
+    font-size: 1.6rem;
+    /* Slightly larger font size */
+    color: #2c3e50;
+    /* Darker text color */
+    margin-bottom: 15px;
+    /* Increased margin for spacing */
+}
+
+.info-description {
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    color: #95a5a6;
+    /* Softer gray color */
+}
+
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+}
+
+.badges img {
+    margin: 0 0.5rem;
+    height: 40px;
+    /* Adjust height as needed */
+}
+
+.footer a {
+    color: #1976d2;
+    /* Material-UI primary color */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-links {
+    margin: 1rem 0;
+}

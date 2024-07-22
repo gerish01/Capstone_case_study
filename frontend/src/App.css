@@ -1,0 +1,98 @@
+/* Container for the entire application */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header h1 {
+  margin: 0;
+}
+
+/* Header right section for logout and account icons */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.account-circle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 36px;
+  /* Increase the size of the account circle icon */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Smooth hover transition */
+}
+
+
+.account-circle:hover {
+  transform: scale(1.1);
+  /* Slightly enlarge the icon on hover */
+  color: #61dafb;
+  /* Change color on hover if needed */
+}
+
+
+/* Layout for ProjectList and TaskList */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* Adjust the spacing between ProjectList and TaskList */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Project list section */
+.project-list-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Task list section */
+.task-list-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  color: white;
+  font-size: 36px;
+  /* Increase the size of the logout icon */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Smooth hover transition */
+}
+
+.logout-button:hover {
+  transform: scale(1.1);
+  /* Slightly enlarge the icon on hover */
+  color: #61dafb;
+  /* Change color on hover if needed */
+}

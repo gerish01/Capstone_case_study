@@ -1,0 +1,70 @@
+/* Container for the task list */
+.task-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    /* Ensure the container takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+.task-list-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 1;
+    /* Ensure header stays on top */
+    background-color: #fff;
+    /* Optional: Add background color */
+    padding-bottom: 10px;
+    /* Add some padding */
+}
+
+/* Button styling */
+.add-task-link .add-task-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-task-link .add-task-button:hover {
+    background-color: #0056b3;
+}
+
+/* Scrollable task container */
+.task-scroll-container {
+    flex: 1;
+    overflow-y: auto;
+    /* Enable vertical scroll */
+}
+
+/* Task item styling */
+.task-item {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Task details styling */
+.task-details {
+    margin-bottom: 10px;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
