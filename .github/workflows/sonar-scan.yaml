@@ -1,0 +1,35 @@
+on:
+  # Trigger analysis when pushing to your main branches, and when creating a pull request.
+  push:
+    branches:
+      - main
+      
+name: Main Workflow
+
+jobs:
+  sonarqube:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        # Disabling shallow clones is recommended for improving the relevancy of reporting
+        fetch-depth: 0
+
+    # Frontend (React) SonarQube Scan
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16' # Ensure to match your project's Node.js version
+    - name: Install frontend dependencies
+      run: npm install
+      working-directory: ./frontend # Specify the frontend directory
+    - name: SonarQube Scan - Frontend
+      uses: sonarsource/sonarqube-scan-action@<action version> # Replace with the correct version, e.g., v2.1.0
+      with:
+        projectBaseDir: .
+        args: >
+          -Dsonar.organization=my-org
+          -Dsonar.projectKey = my_project
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
