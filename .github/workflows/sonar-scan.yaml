@@ -1,9 +1,9 @@
 on:
-  # Trigger analysis when pushing to your main branches, and when creating a pull request.
+  # Trigger analysis when pushing to your main branches
   push:
     branches:
       - main
-      
+
 name: Main Workflow
 
 jobs:
@@ -24,12 +24,14 @@ jobs:
       run: npm install
       working-directory: ./frontend # Specify the frontend directory
     - name: SonarQube Scan - Frontend
-      uses: sonarsource/sonarqube-scan-action@v2.1.0 # Replace with the correct version, e.g., v2.1.0
+      uses: sonarsource/sonarqube-scan-action@v2.1.0 # Replace with the correct version
       with:
-        projectBaseDir: .
+        projectBaseDir: ./frontend # Specify the frontend directory
         args: >
           -Dsonar.organization=my-org
-          -Dsonar.projectKey = my_project
+          -Dsonar.projectKey=my_project_frontend # Replace with your actual project key
+          -Dsonar.projectName=My Frontend Project # Optional: Provide a name for the project
+          -Dsonar.projectVersion=1.0 # Optional: Define the project version
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
