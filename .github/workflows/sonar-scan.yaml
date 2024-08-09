@@ -30,8 +30,7 @@ jobs:
         args: >
           -Dsonar.organization=my-org
           -Dsonar.projectKey=my_project_frontend # Replace with your actual project key
-          -Dsonar.projectName=My Frontend Project # Optional: Provide a name for the project
-          -Dsonar.projectVersion=1.0 # Optional: Define the project version
+          -X
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }}
