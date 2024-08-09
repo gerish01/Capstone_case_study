@@ -26,7 +26,7 @@ jobs:
     - name: SonarQube Scan - Frontend
       uses: sonarsource/sonarqube-scan-action@v2.1.0 # Replace with the correct version
       with:
-        projectBaseDir: ./frontend # Specify the frontend directory
+        projectBaseDir: . # Specify the frontend directory
         args: >
           -Dsonar.organization=my-org
           -Dsonar.projectKey=my_project_frontend # Replace with your actual project key
